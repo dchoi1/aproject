@@ -23,7 +23,7 @@ jobs:
         run: echo $PATH
 
       - name: Check GITHUB_PATH variable
-        run: echo $github_PATH
+        run: echo $GITHUB_PATH"
 
       - name: execute WOW
         run: wow.sh
