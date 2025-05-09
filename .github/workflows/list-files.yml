@@ -9,8 +9,8 @@ jobs:
   list-files:
     runs-on: self-hosted
 
-    env:
-      PATH: "$PATH:/mybin"
+#    env:
+#      PATH: "$PATH:/mybin"
 
     steps:
       - name: Checkout repository
