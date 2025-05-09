@@ -24,3 +24,6 @@ jobs:
 
       - name: Check GITHUB_PATH variable
         run: echo $github_PATH
+
+      - name: execute WOW
+        run: wow.sh
