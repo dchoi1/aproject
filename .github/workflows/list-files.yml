@@ -13,5 +13,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: wow1
-        run: wow.sh
+      - name: path1
+        run: echo $PATH
