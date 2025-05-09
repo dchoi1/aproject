@@ -9,9 +9,12 @@ jobs:
   list-files:
     runs-on: self-hosted
 
+    env:
+      PATH: "/mybin:$PATH"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: path1
+      - name: path2
         run: echo $PATH
