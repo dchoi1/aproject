@@ -1,6 +1,6 @@
-name: path check now
+name: List Files on Self-Hosted Runner
 
-on: 
+on:
   push:
     branches:
       - main
@@ -9,12 +9,13 @@ jobs:
   list-files:
     runs-on: self-hosted
 
-#    env:
-#      PATH: "$PATH:/mybin"
+    env:
+      PATH: "/home/runner/custom-path:$PATH"
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: path2
+      - name: Check PATH variable
         run: echo $PATH
+
