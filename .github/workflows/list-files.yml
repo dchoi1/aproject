@@ -9,13 +9,18 @@ jobs:
   list-files:
     runs-on: self-hosted
 
-    env:
-      PATH: "/home/runner/custom-path:$PATH"
+#    env:
+#      PATH: "/home/runner/custom-path:$PATH"
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: set PATH 
+        run: echo "/mybin" >> "$GITHUB_PATH"
+
       - name: Check PATH variable
         run: echo $PATH
 
+      - name: Check GITHUB_PATH variable
+        run: echo $github_PATH
