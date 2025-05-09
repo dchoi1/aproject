@@ -1,4 +1,4 @@
-name: List Files
+name: path check now
 
 on: 
   push:
