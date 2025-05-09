@@ -13,5 +13,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: List files in the runner
-        run: ls -al /home/svc-runner
+      - name: wow1
+        run: wow.sh
