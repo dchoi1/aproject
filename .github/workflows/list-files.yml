@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
 
     env:
-      PATH: "/mybin:$PATH"
+      PATH: "$PATH:/mybin"
 
     steps:
       - name: Checkout repository
