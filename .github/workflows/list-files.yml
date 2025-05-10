@@ -9,10 +9,13 @@ jobs:
   list-files:
     runs-on: self-hosted
 
-#    env:
-#      PATH: "/home/runner/custom-path:$PATH"
-
     steps:
+      - name: Request approval
+        uses: trstringer/manual-approval@v1
+        with:
+          approvers: "dchoi1"
+          minimum-approvals: 1
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
