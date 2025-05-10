@@ -8,14 +8,9 @@ on:
 jobs:
   list-files:
     runs-on: self-hosted
+    environment: 'Production'
 
     steps:
-      - name: Request approval
-        uses: trstringer/manual-approval@v1
-        with:
-          approvers: "dchoi1"
-          minimum-approvals: 1
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
